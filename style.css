@@ -1,5 +1,48 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
+.m-color {
+  color: #00bfb2;
+}
+.button {
+    color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 10px 10px;
+  border: transparent 1px solid;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #00bfb2;
+  transition: ease 0.25s;
+}
+.button:hover {
+  background-color: transparent;
+  color: #00bfb2;
+  border: #00bfb2 1px solid;
+  transition: ease 0.05s;
+}
+.button:active {
+  background-color: white;
+  color: #00bfb2;
+  border: #00bfb2 1px solid;
+  transition: ease 0.25s;
+}
+
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translatex(100%);
+    }
+    100% {
+        transform: translatex(0);
+    }
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0}
+    to   { opacity: 1}
+  }
