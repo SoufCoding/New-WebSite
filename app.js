@@ -17,3 +17,47 @@ searchClose.onclick =function () {
         searchClose.style.display = 'none';
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let items = document.querySelector('.s-items');
+let item = items.children;
+let itemTitle = item.children
+
+for (let i = 0; i < item.length; i++) {
+    item[i].onclick = function () {
+        for (let i = 0; i < itemTitle.length; i++) {
+            console.log(itemTitle[1]);
+        }
+    }    
+}
+
