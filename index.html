@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="About.css">
     <link rel="stylesheet" href="Services.css">
     <link rel="stylesheet" href="Blog.css">
+    <link rel="stylesheet" href="Contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
@@ -127,7 +128,7 @@
                         <p class="card-body">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui accusamus officia,
                         </p>
-                        <a href="#" class="button">Learn More</a>
+                        <a href="#" class="b-button">Learn More</a>
                     </div>
                 </div>
                 <div class="card c2">
@@ -136,7 +137,7 @@
                         <p class="card-body">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui accusamus officia,
                         </p>
-                        <a href="#" class="button">Learn More</a>
+                        <a href="#" class="b-button">Learn More</a>
                     </div>
                 </div>
                 <div class="card c3">
@@ -145,7 +146,7 @@
                         <p class="card-body">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui accusamus officia,
                         </p>
-                        <a href="#" class="button">Learn More</a>
+                        <a href="#" class="b-button">Learn More</a>
                     </div>
                 </div>
                 <div class="card c4">
@@ -154,7 +155,7 @@
                         <p class="card-body">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui accusamus officia,
                         </p>
-                        <a href="#" class="button">Learn More</a>
+                        <a href="#" class="b-button">Learn More</a>
                     </div>
                 </div>
                 <div class="card c5">
@@ -163,7 +164,7 @@
                         <p class="card-body">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui accusamus officia,
                         </p>
-                        <a href="#" class="button">Learn More</a>
+                        <a href="#" class="b-button">Learn More</a>
                     </div>
                 </div>
                 <div class="card c6">
@@ -172,7 +173,7 @@
                         <p class="card-body">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui accusamus officia,
                         </p>
-                        <a href="#" class="button">Learn More</a>
+                        <a href="#" class="b-button">Learn More</a>
                     </div>
                 </div>
                 <div class="card c7">
@@ -181,7 +182,7 @@
                         <p class="card-body">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui accusamus officia,
                         </p>
-                        <a href="#" class="button">Learn More</a>
+                        <a href="#" class="b-button">Learn More</a>
                     </div>
                 </div>
                 <div class="card c8">
@@ -190,7 +191,7 @@
                         <p class="card-body">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui accusamus officia,
                         </p>
-                        <a href="#" class="button">Learn More</a>
+                        <a href="#" class="b-button">Learn More</a>
                     </div>
                 </div>
                 <div class="card c9">
@@ -199,13 +200,43 @@
                         <p class="card-body">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui accusamus officia,
                         </p>
-                        <a href="#" class="button">Learn More</a>
+                        <a href="#" class="b-button">Learn More</a>
                     </div>
                 </div>
             </div>
             
         </section>
     </main>
+    <footer>
+        <div class ='footer'>
+            <div class="f-wrapper">
+                <div class="f-left">
+                    <h1 class="f-title">Let's Discuss Your Project</h1>
+                    <div class="f-info">
+                        <div class="f-info-item">
+                            <img src="./img/phone.png" alt="" class="f-icon"> +213 780 002 554
+                        </div>
+                        <div class="f-info-item">
+                            <img src="./img/email.png" alt="" class="f-icon"> K.Soufiane3995@gmail.com
+                        </div>
+                        <div class="f-info-item">
+                            <img src="./img/address.png" alt="" class="f-icon"> City El Horria, El-Oued, Algeria
+                        </div>
+                    </div>
+                </div>
+                <div class="f-right">
+                    <p class="f-desc"><b>Lorem, ipsum dolor sit amet</b> consectetur adipisicing elit. Quidem a nemo libero porro voluptas saepe, cupiditate corporis, odit impedit expedita quas. Voluptas.</p>
+                    <form id="contact-form" onsubmit="return false">
+                        <fieldset><input type="text" placeholder="Name" class="User_Name" /></fieldset>
+                        <fieldset><input type="text" placeholder="Subject" class="User_Subject"/></fieldset>
+                        <fieldset><input type="text" placeholder="Email" class="User_Email"/></fieldset>
+                        <fieldset><textarea rows="5" placeholder="Message" class="Message"></textarea></fieldset>
+                        <fieldset><button  class="submit">Submit</button></fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -226,9 +257,9 @@
 
 
 
-
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript"> (function() { emailjs.init("user_eDbFRcfozfdfXq91iXKrX"); })(); </script>
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script> 
     <script src="./app.js"></script>
 </body>
 </html>

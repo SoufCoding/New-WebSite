@@ -25,39 +25,104 @@ searchClose.onclick =function () {
 
 
 
+/************** ******/
 
 
 
 
+/*
+function sendMail() {
+    let tempParams ={
+        from_name: uName.value,
+        to_name: uName.value,
+        the_subject: subject.value,
+        from_email: email.value,
+        message: mMessage.value,
+    }
+    emailjs.send('service1','template1', tempParams)
+    .then(function() {
+        console.log('SUCCESS!');
+    }, function(error) {
+        console.log('FAILED...', error);
+    });
+}
 
 
+window.onload = function() {
+    cForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        this.User_Name.value;
+        this.User_Subject.value;
+        this.User_Email.value;
+        this.Message.value;
+
+        emailjs.sendForm('service1','template1', this)
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
+}
+
+*/
 
 
+function validData() {
+    let cForm = document.getElementById('contact-form')
+    let uName  = document.querySelector('.User_Name');
+    let subject  = document.querySelector('.User_Subject');
+    let email  = document.querySelector('.User_Email');
+    let mMessage  = document.querySelector('.Message');
+    let submit  = document.querySelector('.submit');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let items = document.querySelector('.s-items');
-let item = items.children;
-let itemTitle = item.children
-
-for (let i = 0; i < item.length; i++) {
-    item[i].onclick = function () {
-        for (let i = 0; i < itemTitle.length; i++) {
-            console.log(itemTitle[1]);
+    submit.addEventListener('click', function (e) {
+        if (uName.value == "" || subject.value == "" || email.value == "" || mMessage.value == "" ) {
+            inputEmpty();
         }
-    }    
+        else{
+            sendMail(uName.value, subject.value, email.value, mMessage.value)
+            success();
+            console.log('send mail')
+        }
+    })
+}
+
+validData()
+
+function sendMail(uName, subject, mMessage, email) {
+    emailjs.send("service1","template1",{
+        to_name: uName,
+        from_name: uName,
+        the_subject:subject,
+        message: mMessage,
+        from_email: email,
+    });
+}
+
+
+function success() {
+    swal ( {
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success",
+        button: "Ok!",
+      });
+}
+function error() {
+    swal ( {
+        title: "Oops...!",
+        text: "Something Wrong, Message could not be send!",
+        icon: "error",
+        button: "Ok!",
+      });
+}
+function inputEmpty() {
+    swal ( {
+        title: "Oops...!",
+        text: "Inputs fields are required!",
+        icon: "error",
+        button: "OK!",
+      });
 }
 
