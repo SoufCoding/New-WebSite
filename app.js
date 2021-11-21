@@ -104,7 +104,7 @@ function sendMail(uName, subject, mMessage, email) {
 function success() {
     swal ( {
         title: "Good job!",
-        text: "You clicked the button!",
+        text: "Your message has been sent!",
         icon: "success",
         button: "Ok!",
       });
