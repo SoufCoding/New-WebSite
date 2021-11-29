@@ -1,5 +1,5 @@
 footer{
-  background-image: -webkit-linear-gradient(270deg, #000000 0, #0000005d 100%), url(https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-image: -webkit-linear-gradient(270deg, #000000 0, #0000005d 100%), url(./img/footer.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -105,5 +105,11 @@ button {
   input {
     width: 100%;
     margin: 10px 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer{
+    width: 90%;
   }
 }

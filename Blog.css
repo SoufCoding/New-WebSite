@@ -132,3 +132,10 @@
 .b-button:focus {
   background-color: var(--clr-neutral-100);
 }
+
+
+@media (max-width: 900px) {
+  .b-title {
+    width: 100%;
+  }
+}
